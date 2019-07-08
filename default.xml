@@ -723,4 +723,7 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+  <!-- Track our repos -->
+  <include name="aospwhatever.xml" />
+
 </manifest>
