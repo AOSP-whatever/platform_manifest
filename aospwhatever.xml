@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="aw"
+          fetch="https://github.com/aosp-whatever"
+          revision="android-9.0.0" />
+
   <!-- Device repos -->
   <remove-project name="device/common" />
   <remove-project name="device/generic/arm64" />
@@ -42,31 +46,60 @@
   <remove-project name="device/linaro/hikey-kernel" />
   <remove-project name="device/sample" />
 
+  <!-- CodeAurora additions -->
+  <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" revision="android-9.0.0"  remote="aw" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" revision="android-9.0.0"  remote="aw" />
+
   <!-- External repos -->
   <remove-project name="platform/external/selinux" />
+  <project path="external/selinux" name="platform_external_selinux" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" revision="android-9.0.0"  remote="aw" />
 
   <!-- Framework repos -->
   <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="platform_frameworks_av" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="platform_frameworks_base" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="platform_frameworks_native" revision="android-9.0.0"  remote="aw" />
 
   <!-- General repos -->
   <remove-project name="kernel/tests" />
   <remove-project name="platform/bionic" />
+  <project path="bionic" name="platform_bionic" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/build" />
+  <project path="build/make" name="platform_build_make" revision="android-9.0.0" remote="aw">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <remove-project name="platform/build/kati" />
+  <project path="build/kati" name="platform_build_kati" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="platform_build_soong" revision="android-9.0.0" remote="aw">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/broadcom/wlan" />
   <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/hardware/libhardware_legacy" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="platform/hardware/qcom/bt" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
@@ -81,33 +114,46 @@
   <remove-project name="platform/hardware/qcom/msm8x27" />
   <remove-project name="platform/hardware/qcom/msm8x84" />
   <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/hardware/ril" />
+  <project path="hardware/ril" name="platform_hardware_ril" revision="android-9.0.0" remote="aw" />
 
   <!-- Packages repos -->
   <remove-project name="platform/packages/apps/Camera2" />
-  <remove-project name="platform/packages/apps/CarrierConfig" />
-  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/apps/DevCamera" />
   <remove-project name="platform/packages/apps/DeskClock" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/apps/Gallery" />
   <remove-project name="platform/packages/apps/Gallery2" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/apps/Launcher2" />
   <remove-project name="platform/packages/apps/LegacyCamera" />
-  <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
-  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" revision="android-9.0.0" remote="aw" />
 
   <!-- System repos -->
   <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="platform_system_bt" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/core" />
+  <project path="system/core" name="platform_system_core" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/libhidl" />
+  <project path="system/libhidl" name="platform_system_libhidl" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/media" />
+  <project path="system/media" name="platform_system_media" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/tools/hidl" />
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="platform_system_vold" revision="android-9.0.0" remote="aw" />
+  <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" revision="android-9.0.0" remote="aw" />
 
 </manifest>
