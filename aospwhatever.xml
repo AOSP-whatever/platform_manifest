@@ -63,6 +63,8 @@
   <project path="frameworks/base" name="platform_frameworks_base" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="platform_frameworks_native" revision="android-9.0.0"  remote="aw" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" revision="android-9.0.0"  remote="aw" />
 
   <!-- General repos -->
   <remove-project name="kernel/tests" />
