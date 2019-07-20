@@ -700,4 +700,7 @@
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="wlan-service.lnx.4.0.r10-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk" name="toolchain/binutils" revision="ks-aosp.lnx.1.0.r5-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk" name="toolchain/pgo-profiles" revision="ks-aosp.lnx.1.0.r5-rel"/>
+
+  <!-- Track our repos -->
+  <include name="aospwhatever.xml" />
 </manifest>

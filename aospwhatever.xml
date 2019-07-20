@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="aw"
+          fetch="https://github.com/aosp-whatever"
+          revision="caf/LA.UM.7.6.r1" />
+
+  <!-- External repos -->
+  <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" revision="android-9.0.0"  remote="aw" />
+  <remove-project name="platform/external/selinux" />
+  <project path="external/selinux" name="platform_external_selinux" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+
+  <!-- Framework repos -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="platform_frameworks_av" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="platform_frameworks_base" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="platform_frameworks_native" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+
+  <!-- General repos -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="platform_bionic" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/build" />
+  <project path="build/make" name="platform_build_make" revision="caf/LA.UM.7.6.r1" remote="aw">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/kati" />
+  <project path="build/kati" name="platform_build_kati" revision"caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="platform_build_soong" revision="caf/LA.UM.7.6.r1" remote="aw">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Hardware repos -->
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/hardware/ril" />
+  <project path="hardware/ril" name="platform_hardware_ril" revision="caf/LA.UM.7.6.r1" remote="aw" />
+
+  <!-- Packages repos -->
+  <remove-project name="platform/packages/apps/Camera2" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" revision="caf/LA.UM.7.6.r1" remote="aw" />
+
+  <!-- System repos -->
+  <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="platform_system_bt" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="platform_system_core" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/system/tools/hidl" />
+  <project path="system/tools/hidl" name="platform_system_tools_hidl" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="platform_system_vold" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" revision="android-9.0.0" remote="aw" />
+
+</manifest>
