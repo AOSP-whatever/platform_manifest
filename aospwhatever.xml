@@ -5,6 +5,10 @@
           fetch="https://github.com/aosp-whatever"
           revision="caf/LA.UM.7.6.r1" />
 
+  <!-- Device repos -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="platform_device_qcom_common" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+
   <!-- External repos -->
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/external/selinux" />
@@ -34,7 +38,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <remove-project name="platform/build/kati" />
-  <project path="build/kati" name="platform_build_kati" revision"caf/LA.UM.7.6.r1" remote="aw" />
+  <project path="build/kati" name="platform_build_kati" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/build/soong" />
   <project path="build/soong" name="platform_build_soong" revision="caf/LA.UM.7.6.r1" remote="aw">
     <linkfile src="root.bp" dest="Android.bp" />
@@ -49,6 +53,7 @@
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bt" />
   <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/wlan" />
@@ -65,6 +70,8 @@
   <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
@@ -84,5 +91,16 @@
   <remove-project name="platform/system/vold" />
   <project path="system/vold" name="platform_system_vold" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" revision="android-9.0.0" remote="aw" />
+
+  <!-- Vendor -->
+  <remove-project name="platform/vendor/qcom-opensource/wlan/prima" />
+  <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" />
+  <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="platform/vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_commonsys_system_bt" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <project path="platform/vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_commonsys_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/vendor/qcom-opensource/fm" />
+  <project path="platform/vendor/qcom/opensource/fm" name="platform_vendor_qcom_opensource_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
 
 </manifest>
