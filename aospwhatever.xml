@@ -138,6 +138,7 @@
   <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" revision="android-9.0.0" remote="aw" />
+  <project path="packages/apps/SnapdragonCamera2" name="platform_packages_apps_SnapdragonCamera2" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" revision="android-9.0.0" remote="aw" />
@@ -163,6 +164,7 @@
 
   <!-- Vendor repos -->
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" revision="android-9.0.0"  remote="aw" />
+  <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" revision="android-9.0.0"  remote="aw" />
   <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" revision="android-9.0.0"  remote="aw" />
   <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" revision="android-9.0.0"  remote="aw" />
 
