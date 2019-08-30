@@ -11,6 +11,7 @@
 
   <!-- External repos -->
   <project path="external/ant-wireless/antradio-library" name="platform_external_ant-wireless_antradio-library" revision="android-9.0.0"  remote="aw" />
+  <project path="external/libbfqio" name="platform_external_libbfqio" revision="android-9.0.0"  remote="aw" />
   <remove-project name="platform/external/selinux" />
   <project path="external/selinux" name="platform_external_selinux" revision="caf/LA.UM.7.6.r1"  remote="aw" />
 
@@ -21,6 +22,8 @@
   <project path="frameworks/base" name="platform_frameworks_base" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="platform_frameworks_native" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" revision="caf/LA.UM.7.6.r1"  remote="aw" />
 
   <!-- General repos -->
   <remove-project name="platform/bionic" />
@@ -61,6 +64,12 @@
   <remove-project name="platform/hardware/ril" />
   <project path="hardware/ril" name="platform_hardware_ril" revision="caf/LA.UM.7.6.r1" remote="aw" />
 
+  <!-- Kernel -->
+  <remove-project name="kernel/msm-3.18" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="platform_manifest" revision="caf/LA.UM.7.6.r1" remote="aw" />
+
   <!-- Packages repos -->
   <remove-project name="platform/packages/apps/Camera2" />
   <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" revision="caf/LA.UM.7.6.r1" remote="aw" />
@@ -78,6 +87,10 @@
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" revision="caf/LA.UM.7.6.r1" remote="aw" />
 
   <!-- System repos -->
   <remove-project name="platform/system/bt" />
@@ -93,14 +106,16 @@
   <project path="system/tools/dtbtool" name="platform_system_tools_dtbtool" revision="android-9.0.0" remote="aw" />
 
   <!-- Vendor -->
+  <remove-project name="platform/vendor/codeaurora/telephony" />
+  <project path="vendor/codeaurora/commonsys/telephony" name="platform_vendor_codeaurora_telephony" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/prima" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" />
   <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" />
   <remove-project name="platform/vendor/qcom-opensource/system/bt" />
-  <project path="platform/vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_commonsys_system_bt" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_commonsys_system_bt" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
-  <project path="platform/vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_commonsys_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_commonsys_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/vendor/qcom-opensource/fm" />
-  <project path="platform/vendor/qcom/opensource/fm" name="platform_vendor_qcom_opensource_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <project path="vendor/qcom/opensource/fm" name="platform_vendor_qcom_opensource_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
 
 </manifest>
