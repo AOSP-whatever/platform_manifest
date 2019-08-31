@@ -488,7 +488,6 @@
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" revision="ks-aosp.lnx.1.0.r5-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="ks-aosp.lnx.1.0.r5-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="ks-aosp.lnx.1.0.r5-rel"/>
-  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="android_ui.lnx.3.0.r11-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="ks-aosp.lnx.1.0.r5-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="ks-aosp.lnx.1.0.r5-rel"/>
   <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="ks-aosp.lnx.1.0.r5-rel"/>
@@ -670,6 +669,7 @@
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="data.lnx.4.0.r10-rel"/>
   <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="fm.lnx.2.9.1.r28-rel"/>
   <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="fm.lnx.2.9.1.r28-rel"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager"/>
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="qcom-devices.lnx.4.0.r10-rel"/>
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="android-vendor-hals.lnx.1.1.r11-rel"/>
   <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="location.lnx.3.9.r10-rel"/>
@@ -682,6 +682,7 @@
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="core-technologies.lnx.2.0.r10-rel"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="opensource-tools.lnx.1.0.r39-rel"/>
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="core-technologies.lnx.2.0.r10-rel"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig"/>
   <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="wlan-driver.lnx.1.0.r30-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-2.0" path="vendor/qcom/opensource/wlan/qcacld-2.0" revision="wlan-cld2.driver.lnx.1.0.r26-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="wlan-service.lnx.4.0.r10-rel"/>
