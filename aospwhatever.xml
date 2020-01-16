@@ -22,6 +22,8 @@
   <project path="frameworks/base" name="platform_frameworks_base" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="platform_frameworks_native" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" revision="caf/LA.UM.7.6.r1"  remote="aw" />
 
@@ -99,6 +101,8 @@
   <!-- System repos -->
   <remove-project name="platform/system/bt" />
   <project path="system/bt" name="platform_system_bt" revision="caf/LA.UM.7.6.r1" remote="aw" />
+  <remove-project name="platform/system/connectivity/wificond" />
+  <project path="system/connectivity/wificond" name="platform_system_connectivity_wificond" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="platform_system_core" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/system/sepolicy" />
@@ -117,6 +121,8 @@
   <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" />
   <remove-project name="platform/vendor/qcom-opensource/system/bt" />
   <project path="vendor/qcom/opensource/commonsys/system/bt" name="platform_vendor_qcom_opensource_commonsys_system_bt" revision="caf/LA.UM.7.6.r1"  remote="aw" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth_ext" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="platform_vendor_qcom_opensource_commonsys_bluetooth_ext" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
   <project path="vendor/qcom/opensource/commonsys/fm" name="platform_vendor_qcom_opensource_commonsys_fm" revision="caf/LA.UM.7.6.r1"  remote="aw" />
   <remove-project name="platform/vendor/qcom-opensource/fm" />
