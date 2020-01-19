@@ -99,7 +99,7 @@
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <remove-project name="platform/hardware/qcom/bt" />
-  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" revision="android-9.0.0" remote="aw" />
+  <project path="hardware/qcom/bt" name="platform_hardware_qcom_bt" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
@@ -114,7 +114,7 @@
   <remove-project name="platform/hardware/qcom/msm8x27" />
   <remove-project name="platform/hardware/qcom/msm8x84" />
   <remove-project name="platform/hardware/qcom/wlan" />
-  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" revision="android-9.0.0" remote="aw" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" revision="caf/LA.UM.7.6.r1" remote="aw" />
   <remove-project name="platform/hardware/ril" />
   <project path="hardware/ril" name="platform_hardware_ril" revision="android-9.0.0" remote="aw" />
 
@@ -156,8 +156,6 @@
   <project path="system/core" name="platform_system_core" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/libhidl" />
   <project path="system/libhidl" name="platform_system_libhidl" revision="android-9.0.0" remote="aw" />
-  <remove-project name="platform/system/media" />
-  <project path="system/media" name="platform_system_media" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="platform_system_sepolicy" revision="android-9.0.0" remote="aw" />
   <remove-project name="platform/system/tools/hidl" />
