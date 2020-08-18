@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Repositories -->
+
+  <remote name="github" fetch="https://github.com" />
+
+  <remove-project name="platform/build/blueprint" />
+  <project name="AOSP-whatever/platform_build_blueprint" path="build/blueprint" remote="github" revision="ctr-q10x" />
+  <remove-project name="platform/build" />
+  <project name="AOSP-whatever/platform_build_make" path="build/make" remote="github" revision="ctr-q10x" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project name="AOSP-whatever/platform_build_soong" path="build/soong" remote="github" revision="ctr-q10x" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <remove-project name="device/qcom/common" />
+  <project name="AOSP-whatever/platform_device_qcom_common" path="device/qcom/common" remote="github" revision="caf/LA.UM.8.6.r1" />
+  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="github" revision="lineage-17.1" />
+  <project name="AOSP-whatever/platform_external_libbfqio" path="external/libbfqio" remote="github" revision="android-10.0.0" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project name="AOSP-whatever/platform_hardware_libhardware" path="hardware/libhardware" remote="github" revision="ctr-q10x" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/system/core" />
+  <project name="AOSP-whatever/platform_system_core" path="system/core" remote="github" revision="ctr-q10x" />
+  <project name="ThankYouMario/proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="github" revision="quartz" />
+  <remove-project name="platform/vendor/qcom-opensource/core-utils" />
+  <project name="AOSP-whatever/platform_vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="github" revision="ctr-q10x" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <project name="AOSP-whatever/platform_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="ctr-q10x" />
+  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" remote="github" revision="quartz" />
+  <remove-project name="platform/vendor/qcom-opensource/location" />
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/fst-manager" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/media" />
+</manifest>

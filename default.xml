@@ -816,4 +816,8 @@
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="refs/heads/wlan-service.lnx.5.0.r5-rel"/>
   <project groups="aosp-android10-release" name="toolchain/benchmark" revision="refs/heads/ks-aosp.lnx.2.0.r10-rel"/>
   <project groups="aosp-android10-release,pdk" name="toolchain/pgo-profiles" revision="refs/heads/ks-aosp.lnx.2.0.r10-rel"/>
+
+  <!-- citrus-caf -->
+  <include name="citrus.xml" />
+
 </manifest>
