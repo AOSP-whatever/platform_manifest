@@ -39,7 +39,7 @@
     <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
   </project>
   <project name="device/qcom/qssi" revision="a4fb9c4776d477b973f706de5fc26d6f548f1d14" upstream="refs/heads/qcom-qssi.lnx.6.0.r8-rel"/>
-  <project name="device/qcom/sepolicy" revision="f9a506bf7df2aba2fccd597aa61d4e99040d5f4a" upstream="refs/heads/sepolicy.lnx.6.0.r11-rel"/>
+  <project name="device/qcom/sepolicy" revision="eed69dd91dbe59f40ae5c3150995532c95750324" upstream="refs/heads/sepolicy.lnx.6.0.r11-rel"/>
   <project name="device/qcom/vendor-common" revision="a75e6c3774274c5500642fa3350df449288d9322" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="device/sample" revision="c8411b79a2c0d881ae134f795d8c0f56bc6d31c3" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release,vts" name="kernel/configs" revision="cf652c5dae0ad5d19423bd946ff0b59681df79c6" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
@@ -433,7 +433,7 @@
   <project groups="pdk,r-fs-release" name="platform/external/zopfli" path="external/zopfli" revision="1ebb510a3cc2283fc282aa4ebf9f521b32c61fcf" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/external/zxing" path="external/zxing" revision="ca46ddb16b366def72de987604acb4bc3660ada2" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/frameworks/av" path="frameworks/av" revision="fe151e851c82709276e602c972cf4455cd304dfd" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
-  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/base" path="frameworks/base" revision="77868ab54c0b0d3e36f2899263ef2b95d34aeaf2" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
+  <project groups="pdk-cw-fs,pdk-fs,r-fs-release" name="platform/frameworks/base" path="frameworks/base" revision="486cb7108bd356d7c60943c3aeeeefe272499b92" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="887851a1e8a565282531fa586efba45b94dcec19" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="97459bde28b2f1aac96a52ac1c1ba38ce492bca0" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="086d7d3f172d617dd878aca2f69c30242e16ae18" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
@@ -471,22 +471,22 @@
   <project groups="pdk,r-fs-release" name="platform/hardware/google/camera" path="hardware/google/camera" revision="164e537bfa4fb0dc93d630f7c1712b2fff913a23" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="easel,pdk,r-fs-release" name="platform/hardware/google/easel" path="hardware/google/easel" revision="72a80060d8d427a156fa510a2e2de4cd9494fa6a" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="e1a3eb618e568fdfaaf7b9d559eb3f84341163d6" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
-  <project groups="pdk,r-fs-release" name="platform/hardware/interfaces" path="hardware/interfaces" revision="2d566820ec9188127b308918b68ba0ea2937863e" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
+  <project groups="pdk,r-fs-release" name="platform/hardware/interfaces" path="hardware/interfaces" revision="30f48cb5a6dd4c574a6432014040530e87bd1a57" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/hardware/libhardware" path="hardware/libhardware" revision="aa800acfd82ff7ab450fcff1539e266db8b36a22" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="cfa93bca0abe4f58a1878363797bbbe1c87bb335" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="53447ca32a6bfb03125a2999fdf76802e7e7efd0" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,r-fs-release" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="7bcde8fd74370da20f6cb192366df3f243d180da" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="da475308d76663ffca772012351fad3a0c11ffed" upstream="refs/heads/audio-hal.lnx.8.0.r12-rel"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="8d59588018aa7821204778e43db6b6833827a25c" upstream="refs/heads/android-core.lnx.6.0.r11-rel"/>
-  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="19ae417f8842ad73032c6f390cfa6cad441c3a81" upstream="refs/heads/camera.lnx.3.2.r11-rel"/>
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="201f2af89fd41a240219b107563d684473557587" upstream="refs/heads/display.lnx.3.4.r2-rel"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="831b1ce0b97f666c58bd10b467d772ad3255620c" upstream="refs/heads/camera.lnx.3.2.r11-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="0bc1eea3955c988ae6e04f3ff9048d8dbc639c18" upstream="refs/heads/display.lnx.3.4.r2-rel"/>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="37970ef5d3b7095e1ca647f865add176fd83fe27" upstream="refs/heads/location.lnx.6.0.r10-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk"/>
   </project>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="90ca47bb9dbda827ffe329fc226eebd0592ec7ed" upstream="refs/heads/video-userspace.lnx.2.10.r9-rel"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="a1b5a1853600665848bc86881f2cf2a875d177e3" upstream="refs/heads/video-userspace.lnx.2.10.r9-rel"/>
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="4e4f15ed868df6c2fd0b582adb28d800386f3c64" upstream="refs/heads/ppat-corepower.lnx.1.0.r11-rel"/>
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="59864a2cd0cddb89dd5fc4933db11b69fbab61ae" upstream="refs/heads/qvr.lnx.5.0.r44-rel"/>
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="9ece87f122336d7ecf82556414be0ecfbdc0f932" upstream="refs/heads/wlan-aosp.lnx.6.0.r8-rel"/>
@@ -798,7 +798,7 @@
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="e275653ca33f8b915ab76ac661e814651b4aa31d" upstream="refs/heads/core-technologies.lnx.3.0.r11-rel"/>
-  <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" revision="976dd12015e25c43e3cd9647045340f892cf65c6" upstream="refs/heads/bt.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" revision="88c19cada169c18bf009eb1b6012d1f01394b89e" upstream="refs/heads/bt.lnx.6.0.r11-rel"/>
   <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="af315e067c472b742115e6a4638356b7fcb260f0" upstream="refs/heads/power.legacyopensource.lnx.1.0.r13-rel"/>
   <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="237f50045902c07ede37096b6b85dfc71e21c798" upstream="refs/heads/android-core.lnx.6.0.r11-rel"/>
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.6.0.r10-rel"/>
@@ -813,14 +813,14 @@
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="5b1bdbbfdb2410cbe304fc402047df67604409a7" upstream="refs/heads/wigig-vndr.lnx.6.0.r7-rel"/>
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="c79104637218b9b31966fb213523ab22898c45ec" upstream="refs/heads/wlan-driver.lnx.1.0.r43-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="849b9c41c9f5969a68eac52434049f7fa85435d8" upstream="refs/heads/wlan-driver.lnx.1.0.r43-rel"/>
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="a33f3a5fe682a247bf3b394137bda01f33dd1068" upstream="refs/heads/wlan-service.lnx.6.0.r8-rel"/>
-  <project name="platform/vendor/qcom/msm8937_32go" path="device/qcom/msm8937_32go" revision="1b0dcdec9c2701558691b4749bef74e1fcb08d75" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/msm8937_32go" path="device/qcom/msm8937_32go" revision="252238d7d702fb7f95a4c4da43bf5faef5aa1cf2" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
   <project name="platform/vendor/qcom/msmnile" path="device/qcom/msmnile" revision="618935486fd63bef0676ae06532aef7f5f9b60f6" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
-  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" revision="15b992d2c1580d280afc567abc8b0725fef63796" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
-  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" revision="174b33ffd40639d46713e283e3c96271d982b34e" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
-  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" revision="755b2a5392c90a8a5a2616480c97bb0822076bb3" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
-  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" revision="7eda9955847da9950650775115ff44235e74ce40" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" revision="f15c3f07e95668f54ae6803fa2c6f85cf817d984" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" revision="8867b0c6b6706fbaa892e63a191cb7f869eafb8a" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" revision="841fe11275c6bc50df1a7e597d8b541e947f9da4" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
+  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" revision="32f4f3aa96dcc7ebc217aa6b481ff56a7f67a3c1" upstream="refs/heads/qcom-devices.lnx.6.0.r11-rel"/>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="fafc1dd37d48c569f963cd32c318c4d3eb4837bf" upstream="refs/heads/wlan-service.lnx.6.0.r8-rel"/>
   <project groups="pdk,r-fs-release" name="toolchain/pgo-profiles" revision="61efeb3302de710c2ef4142e6e80ead09714265d" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="pdk,pdk-cw-fs,pdk-fs,r-fs-release" name="tools/platform-compat" revision="1714fa197bd351843ab8469a79f8cecbe03d8c4c" upstream="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
