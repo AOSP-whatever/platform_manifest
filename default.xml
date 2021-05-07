@@ -74,7 +74,6 @@
   <project groups="aosp-android11-release,pdk" name="platform/external/FP16" path="external/FP16" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="aosp-android11-release,pdk" name="platform/external/FXdiv" path="external/FXdiv" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="aosp-android11-release,pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
-  <project groups="aosp-android11-release,pdk" name="platform/external/OpenCL-CTS" path="external/OpenCL-CTS" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="aosp-android11-release,pdk" name="platform/external/OpenCSD" path="external/OpenCSD" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="aosp-android11-release,pdk" name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
   <project groups="aosp-android11-release,pdk" name="platform/external/XNNPACK" path="external/XNNPACK" revision="refs/heads/ks-aosp.lnx.3.0.r11-rel"/>
@@ -764,7 +763,7 @@
   <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" revision="refs/heads/audio-hal.lnx.8.0.r12-rel"/>
   <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="refs/heads/bt.lnx.6.0.r11-rel"/>
   <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="refs/heads/btcommon.lnx.6.0.r10-rel">
-    <linkfile dest="vendor/qcom/defs/board-defs/legacy/bt-commonsys-intf-legacy-board.mk" src="bt-commonsys-intf-legacy-board.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/bt-system-legacy-board.mk" src="bt-system-legacy-board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="refs/heads/bt.lnx.6.0.r11-rel"/>
